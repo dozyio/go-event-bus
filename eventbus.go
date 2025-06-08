@@ -22,8 +22,8 @@ type EventBus struct {
 // ErrBusClosed is returned by PublishSync if the bus has been closed.
 var ErrBusClosed = errors.New("eventbus: bus closed")
 
-// NewEventBus initializes and returns a new EventBus.
-func NewEventBus() *EventBus {
+// New initializes and returns a new EventBus.
+func New() *EventBus {
 	return &EventBus{
 		subscribers: make(map[string][]chan any),
 		quitCh:      make(chan struct{}),

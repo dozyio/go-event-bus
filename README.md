@@ -34,7 +34,7 @@ import (
 )
 
 func main() {
-    bus := eventbus.NewEventBus()
+    bus := eventbus.New()
 
     // Subscriber 1
     ch1 := bus.Subscribe("topic:hello")
@@ -78,7 +78,7 @@ func main() {
 
 ## API Reference
 
-### `func NewEventBus() *EventBus`
+### `func New() *EventBus`
 
 Creates and returns a new `EventBus`.
 
