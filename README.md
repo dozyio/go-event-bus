@@ -30,7 +30,7 @@ import (
     "fmt"
     "time"
 
-    "github.com/dozyio/go-event-bus"
+    eventbus "github.com/dozyio/go-event-bus"
 )
 
 func main() {
